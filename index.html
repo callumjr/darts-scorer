@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darts Scorer</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1 class="title">Darts Scorer</h1>
+    <div class="choose">
+        <div class="choose-players">
+            <h2>Players</h2>
+            <ul class="choose-players-ul">
+                <li><button class="players">1</button></li>
+            </ul>
+        </div>
+
+        <div class="choose-game">
+            <h2>Game</h2>
+            <ul class="choose-game-ul">
+                <li><button class="game">501</button></li>
+                <li><button class="game">301</button></li>
+                <li><button class="game">101</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="scorer hidden">
+        <div class="score"></div>
+        <div class="checkout"></div>
+        <div class="output"></div>
+        <div class="container">
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="confirm">YES</button>
+            <button class="zero number">0</button>
+            <button class="delete">DEL</button>
+            <button class="bust">BUST</button>
+        </div>
+    </div>
+
+    <div class="game-stats hidden">
+        <h2>Average</h2>
+        <div class="avg"></div>
+
+        <h2>Darts</h2>
+        <div class="darts"></div>
+    </div>
+
+    <div class="how-many-darts hidden">
+        <h2>How many darts for the finish</h2>
+        <div class="darts-buttons">
+            <button class="darts-button">1</button>
+            <button class="darts-button">2</button>
+            <button class="darts-button">3</button>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

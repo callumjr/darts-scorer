@@ -1,0 +1,213 @@
+:root {
+  --primary-color: #f89;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.title,
+.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  color: var(--primary-color);
+  margin: 2rem 0 0 0;
+}
+
+.score {
+  font-size: 2rem;
+  color: #2f81eb;
+}
+
+.checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout > h2 {
+  margin: 1rem 1rem 0 1rem;
+  font-family: sans-serif;
+  color: #e41f3d;
+}
+
+.choose {
+  width: 15rem;
+  position: absolute;
+  left: 2rem;
+  top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choose h2 {
+  font-family: sans-serif;
+  color: #0d4c4f;
+  margin-bottom: 1rem;
+}
+
+.choose-players-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.choose-game-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.choose-players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choose-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choose .players {
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: #215bd8;
+  border: 1px solid white;
+  color: #fff;
+}
+
+.choose .game {
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border: 1px solid white;
+}
+
+.output {
+  margin: 1.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #dfdfdf;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 4px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50px)[3];
+      grid-template-columns: repeat(3, 50px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: .5rem;
+}
+
+.container .zero {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.container .bust {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.game-stats,
+.how-many-darts {
+  font-family: sans-serif;
+  color: #237eba;
+}
+
+.game-stats {
+  position: absolute;
+  top: 6rem;
+  right: 9rem;
+}
+
+.how-many-darts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 4em;
+}
+
+.darts-buttons > button {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}

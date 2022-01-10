@@ -1,0 +1,8 @@
+bust button adds 0 to average and switches to next player if their is one
+
+add win
+
+ask how many darts for finish
+
+add game mentality (keeping legs)
+
